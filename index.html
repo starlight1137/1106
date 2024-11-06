@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>我的作品集</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 輪播圖 -->
+    <div class="container mb-4">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="collection/image/shu.png" class="d-block w-100" alt="pic1">
+                </div>
+                <div class="carousel-item">
+                    <img src="/api/placeholder/1200/400" class="d-block w-100" alt="pic2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/api/placeholder/1200/400" class="d-block w-100" alt="pic3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- YouTube 影片預覽區 -->
+    <div class="container mb-4">
+        <div class="row">
+            response.setHeader("X-Frame-Options", "Same-Origin");
+            <h2 style="text-align: center;">好歌推薦</h2>
+            <!-- 第一個 YouTube 預覽 -->
+            <div class="col-md-4 mb-4">
+                <div class="ratio ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vWin8BORL4w?si=sDsqZOCMUYaa_gdd&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <h4 class="mt-2" style="text-align: center;">月詠み『生きるよすが』</h4>
+            </div>
+
+            <!-- <div id="ytplayer"></div>
+
+            <script>
+            // Load the IFrame Player API code asynchronously.
+            var tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/embed/vWin8BORL4w?si=YuZPFAgdPq-1z0xI";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+            // Replace the 'ytplayer' element with an <iframe> and
+            // YouTube player after the API code downloads.
+            var player;
+            function onYouTubePlayerAPIReady() {
+                player = new YT.Player('ytplayer', {
+                height: '360',
+                width: '640',
+                videoId: 'vWin8BORL4w'
+                });
+            }
+            </script> -->
+
+            <!-- 第二個 YouTube 預覽 -->
+            <div class="col-md-4 mb-4">
+                <div class="ratio ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Jtx8NNYy8Ao?si=zgsFLQlb6MKjsa-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <h4 class="mt-2" style="text-align: center;">See-Saw<br>『去り際のロマンティクス』</h4>
+            </div>
+            <!-- 第三個 YouTube 預覽 -->
+            <div class="col-md-4 mb-4">
+                <div class="ratio ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HAiKkVt4MWE?si=3fzMdgj340y7KOnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <h4 class="mt-2" style="text-align: center;">Cage The Elephant - Cigarette Daydreams</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- 卡片區塊 -->
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="/api/placeholder/300/200" class="card-img-top" alt="卡片圖片1">
+                    <div class="card-body">
+                        <h5 class="card-title">猜拳遊戲</h5>
+                        <p class="card-text"></p>
+                        <a href="https://starlight1137.github.io/0918-41041222/" class="btn btn-primary">點擊前往</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="/api/placeholder/300/200" class="card-img-top" alt="卡片圖片2">
+                    <div class="card-body">
+                        <h5 class="card-title">翻牌遊戲</h5>
+                        <p class="card-text"></p>
+                        <a href="https://starlight1137.github.io/0925hw-41041222/" class="btn btn-primary">點擊前往</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="/api/placeholder/300/200" class="card-img-top" alt="卡片圖片3">
+                    <div class="card-body">
+                        <h5 class="card-title">打磚塊遊戲</h5>
+                        <p class="card-text"></p>
+                        <a href="https://starlight1137.github.io/brick-breaker-game/" class="btn btn-primary">點擊前往</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="/api/placeholder/300/200" class="card-img-top" alt="卡片圖片4">
+                    <div class="card-body">
+                        <h5 class="card-title">JS套件介紹(未完)</h5>
+                        <p class="card-text"></p>
+                        <a href="https://starlight1137.github.io/1030hw-41041222/" class="btn btn-primary">點擊前往</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="fixed-bottom-container">
+        <!-- 固定底部容器 -->
+        <div>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-4 mb-2 mb-md-0">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-geo-alt me-2" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                            </svg>
+                            <span>聯絡地址：我家</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-2 mb-md-0">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telephone me-2" viewBox="0 0 16 16">
+                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                            </svg>
+                            <span>聯絡電話：我的手機</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope me-2" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                            </svg>
+                            <span>聯絡信箱：41041222@gm.nfu.edu.tw</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
